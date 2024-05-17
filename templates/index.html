@@ -1,150 +1,183 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fots -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Main CSS -->
+      <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="resume">
-  <div class="base">
-    <div class="profile">
-      <div class="photo">
-        <!--<img src="" /> -->
-        <i class="fas fa-rocket"></i>
-      </div>
-      <div class="info">
-        <h1 class="name">Naomi Weatherford</h1>
-        <h2 class="job">Frontend Web Designer</h2>
-      </div>
-    </div>
-    <div class="about">
-      <h3>About Me</h3>I'm a web designer for Fiserv, specializing in web design, graphic design, and UX. Experienced with the Adobe Creative Suite, responsive design, social media management, and prototyping.
-    </div>
-    <div class="contact">
-      <h3>Contact Me</h3>
-      <div class="call"><a href="tel:123-456-7890"><i class="fas fa-phone"></i><span>123-456-7890</span></a></div>
-      <div class="address"><a href="https://goo.gl/maps/fiTBGT6Vnhy"><i class="fas fa-map-marker"></i><span>Provo, Utah</span></a>
-      </div>
-      <div class="email"><a href="mailto:astronaomical@gmail.com"><i class="fas fa-envelope"></i><span>astronaomical</span></a></div>
-      <div class="website"><a href="http://astronaomical.com/" target="_blank"> <i class="fas fa-home"></i><span>astronaomical.com</span></a></div>
-    </div>
-    <div class="follow">
-      <h3>Follow Me</h3>
-      <div class="box">
-        <a href="https://www.facebook.com/astronaomical/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/astronaomical/" target="_blank"><i class="fab fa-instagram "></i></a>
-        <a href="https://www.pinterest.com/astronaomical/" target="_blank"><i class="fab fa-pinterest"></i></a>
-        <a href="https://www.linkedin.com/in/naomi-weatherford-758385112/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://codepen.io/astronaomical/" target="_blank"><i class="fab fa-codepen"></i></a>
-        <a href="https://www.behance.net/astronaomical" target="_blank"><i class="fab fa-behance"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="func">
-    <div class="work">
-      <h3><i class="fa fa-briefcase"></i>Experience</h3>
-      <ul>
-        <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 - Now</small></li>
-        <li><span>Web Designer</span><small>Lynden</small><small>Jan 2018 - Apr 2018</small></li>
-        <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2017 - Dec 2017</small></li>
-      </ul>
-    </div>
-    <div class="edu">
-      <h3><i class="fa fa-graduation-cap"></i>Education</h3>
-      <ul>
-        <li><span>Bachelor of Science<br>Web Design and Development</span><small>BYU-Idaho</small><small>Jan. 2016 - Apr. 2018</small></li>
-        <li><span>Computer Science</span><small>Edmonds Community College</small><small>Sept. 2014 - Dec. 2015</small></li>
-        <li><span>High School</span><small>Henry M. Jackson High School</small><small>Jan. 2013 - Jun. 2015</small></li>
-      </ul>
-    </div>
-    <div class="skills-prog">
-      <h3><i class="fas fa-code"></i>Programming Skills</h3>
-      <ul>
-        <li data-percent="95"><span>HTML5</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="90"><span>CSS3 & SCSS</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="60"><span>JavaScript</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="50"><span>jQuery</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="40"><span>JSON</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="55"><span>PHP</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-        <li data-percent="40"><span>MySQL</span>
-          <div class="skills-bar">
-            <div class="bar"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="skills-soft">
-      <h3><i class="fas fa-bezier-curve"></i>Software Skills</h3>
-      <ul>
-        <li data-percent="90">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Illustrator</span><small></small>
-        </li>
-        <li data-percent="75">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Photoshop</span><small></small>
-        </li>
-        <li data-percent="85">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>InDesign</span><small></small>
-        </li>
-        <li data-percent="65">
-          <svg viewbox="0 0 100 100">
-            <circle cx="50" cy="50" r="45"></circle>
-            <circle class="cbar" cx="50" cy="50" r="45"></circle>
-          </svg><span>Dreamweaver</span><small></small>
-        </li>
-      </ul>
-    </div>
-    <div class="interests">
-      <h3><i class="fas fa-star"></i>Interests</h3>
-      <div class="interests-items">
-        <div class="art"><i class="fas fa-palette"></i><span>Art</span></div>
-        <div class="art"><i class="fas fa-book"></i><span>Books</span></div>
-        <div class="movies"><i class="fas fa-film"></i><span>Movies</span></div>
-        <div class="music"><i class="fas fa-headphones"></i><span>Music</span></div>
-        <div class="games"><i class="fas fa-gamepad"></i><span>Games</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script><script  src="./script.js"></script>
 
-</body>
+    <title>Mahbod CV </title>
+  </head>
+  <body>
+   
+    <!-- header -->
+    <header class="ds-header" id="site-header">
+        <div class="container">
+            <div class="ds-header-inner">
+              <!-- logo -->
+              <a href="index.html" class="ds-logo">
+                <span>M</span>Mahbod Zamanpour
+              </a>
+              <!-- logo -->
+              <!-- social -->
+              <ul class="ds-social">
+                <li><a href="https://github.com/Mah6od" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li><a href="https://www.instagram.com/mah6od" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mahbod-zp/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+              </ul>
+              <!-- social -->
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- banner -->
+    <div class="ds-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+            <figure>
+              <img src="{% static 'images/profile.jpg' %}">
+            </figure>
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+            <section>
+                <h1>
+                  <span>HI THERE</span>
+                  I’m Mahbod Zamanpour <br> Back-End developer From Rasht.
+                </h1>
+                <ul class="ds-numbervalulist">
+                  <li>
+                    <strong>24</strong>
+                    <span>Age</span>
+                  </li>
+                  <li>
+                    <strong>English</strong>
+                    <span>Languages</span>
+                  </li>
+                  <li>
+                    <strong>+1</strong>
+                    <span>Experience</span>
+                  </li>
+                </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+
+    <!-- about -->
+    <div class="ds-about-section">
+      <div class="container">
+        <section>
+            <h2 class="ds-heading">About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum ante a porta blandit. Quisque velit tortor, ultricies in quam ut, luctus convallis metus. Nunc vitae felis rutrum, mattis justo quis, bibendum tellus. Integer bibendum eget dolor nec venenatis. Aliquam erat volutpat. Etiam et est vitae turpis accumsan vulputate. Curabitur et vehicula nisl, eu congue dolor. Vivamus nec hendrerit mi Nulla consequat tempor.</p>
+            <div class="ds-button-sec text-center">
+                <a href="https://github.com/Mah6od?tab=repositories" class="ds-button">Projects</a>
+            </div>
+        </section>
+      </div>
+    </div>
+    <!-- about -->
+
+    <!--  Skills -->
+    <div class="ds-skills-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+             <h2 class="ds-heading">Core Skills</h2>
+             <ul class="ds-skills-list">
+               <li>Python</li>
+               <li>Django</li>
+               <li>Flask</li>
+               <li>MongoDB</li>
+               <li>SQL</li>
+               <li>Github</li>
+               <li>AI</li>
+               <li>HTML</li>
+             </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--  Skills -->
+
+   <!-- Experience -->
+   <div class="ds-experience-section">
+     <div class="container">
+        <h2 class="ds-heading">Work Experience</h2>
+        <div class="row ds-experience-list">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <section>
+                <span class="ds-year">2019 - Present</span>
+                <h3 class="ds-officename">Matrix Media Inc</h3>
+                <span class="ds-department">Full Stack developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+              <section>
+                <span class="ds-year">2018 - 2019</span>
+                <h3 class="ds-officename">Lexind</h3>
+                <span class="ds-department">Senior app developer</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum.</p>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut.</li>
+                </ul>
+              </section>
+            </div>
+        </div>
+     </div>
+   </div>
+    <!-- Experience -->
+
+   <!--  Work -->
+
+   <!--  Work -->
+
+   <!--  footer -->
+   <footer class="ds-footer text-center">
+     <div class="container">
+        <section>
+          <span>Stay in touch</span>
+          <h4>Ready to talk?</h4>
+          <p>Feel free to contact us</p>
+          <a href="mailto:mahbodzamanpour@gmail.com" class="ds-button">Lets Talk</a>
+        </section>
+        <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span>
+     </div>
+   </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
 </html>
